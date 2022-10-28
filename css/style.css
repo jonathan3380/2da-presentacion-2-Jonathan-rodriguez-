@@ -95,7 +95,7 @@ nav{
 }
 .pBiografia{
     color: white;
-    padding: 0 0 0 200px;
+    padding: 25px;
 }
 body{
     background-image: url(../Imagenes/imagen_inicio.jpg) ;
@@ -157,14 +157,12 @@ h1{
     .checkbtn{
         display: block;
         padding-bottom: 01px;
-        display: flex;
-
     }
     ul{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #060626;
+        background: #2a2a2a;
         top: 80px;
         left:-100%;
         text-align: center;
@@ -184,11 +182,37 @@ h1{
         font-style: 20px;
         display: flex;        
     }
-    li a:hover, li a.bIndex, a.aBiografia{
+    li a:hover, li a.bIndex{
         background: none;
-        color: rgb(237, 31, 31);
+        color: rgba(218, 218, 218, 0.76);
     }
     #check:checked ~ ul{
         left: 0;
     } 
+    .divContacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .divBiografia{
+        display: flex;
+        flex-direction: column;
+    }
+    .h1Biografia{
+        display: flex;
+        justify-content: center;
+    }
+    .pBiografia{
+        display: flex;
+        justify-content: center;
+    }
+    .aBiografia{
+        color: #f1f1f1;
+    }
+    .divPortfolio{
+        display: flex;
+        flex-direction: column;
+    }
+    .aPortfolio{
+        color: #f1f1f1;
+    }
 }
