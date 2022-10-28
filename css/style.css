@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+li{ 
+    list-style-type: none;
+    color: antiquewhite; 
+    padding: 7px 13px;
+    font-size: 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.aIndex, li a:hover{
+    background: #e6e3e34d;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.aIndex{
+    text-decoration: none;
+    color: #0c0b0b;
+}
+.aContacto{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+.aBiografia{
+    text-decoration: none;
+    color: #653402;
+}
+.aPortfolio{
+    text-decoration: none;
+    color: #653402;
+}
+/* a:link, a:visited,  a:hover, a:active
+{
+    color: #0c0b0b;
+    text-decoration: none;
+}*/
+nav{
+    background-color: rgba(241, 224, 202, 0.185);
+    padding: 30px;
+    height: 80px;   
+}
+.enlace{
+    position: absolute;
+    padding: 0px 20px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.divContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 20px;
+}
+.h1Contacto{
+    color: white;
+    padding: 25px;
+}
+.h2Contacto{
+    color: white;
+    padding: 50px;
+}
+.divBiografia{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 20px;
+}
+.h1Biografia{
+    color: white;
+    padding: 25px;
+    
+}
+.pBiografia{
+    color: white;
+    padding: 0 0 0 200px;
+}
+body{
+    background-image: url(../Imagenes/imagen_inicio.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    font-family: 'Charis SIL', serif;
+    font-family: 'Quicksand', sans-serif; 
+}
+.bodyContacto{
+    background-image: url(../Imagenes/fotografia_contacto.jpg);  
+}
+
+.bodyBiografia{
+    background-image: url(../Imagenes/fotografia_biografia.jpg);
+}
+.bodyPortfolio{
+    background-image: url(../Imagenes/fotografia_portfolio2\ \(3\).jpg);
+}
+.divPortfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 20px;
+}
+.h1Portfolio{
+    padding: 20px;
+}
+.pPortfolio{
+    padding: 20px;
+    color: rgb(70, 39, 2);
+}
+section{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: 'Charis SIL', serif;
+    font-family: 'Quicksand', sans-serif; 
+}
+h1{    
+    justify-content: center;
+    align-items: center;    
+}
+
+@media (max-width:952px) {
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:750px) {
+    .checkbtn{
+        display: block;
+        padding-bottom: 01px;
+        display: flex;
+
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #060626;
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        color: #f1f1f1;
+        font-style: 20px;
+        display: flex;
+        
+    }
+    li a:hover, li a.bIndex, a.aBiografia{
+        background: none;
+        color: rgb(237, 31, 31);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    } 
+}
