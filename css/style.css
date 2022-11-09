@@ -206,7 +206,7 @@ ul {
     padding: 25px;
 }
 body{
-    background-image: url(../Imagenes/imagen_inicio.jpg) ;
+    background-image: url(../Imagenes/Inicio.jpg) ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -216,14 +216,15 @@ body{
     font-family: 'Quicksand', sans-serif; 
 }
 .bodyContacto{
-    background-image: url(../Imagenes/fotografia_contacto.jpg);  
+    background-image: url(../Imagenes/Contacto.jpg) ;
+      
 }
 
 .bodyBiografia{
     background-image: url(../Imagenes/fotografia_biografia.jpg);
 }
 .bodyPortfolio{
-    background-image: url(../Imagenes/fotografia_portfolio2\ \(3\).jpg);
+    background-image: url(../Imagenes/portfolio-2.jpg);
 }
 .divPortfolio{
     display: flex;
